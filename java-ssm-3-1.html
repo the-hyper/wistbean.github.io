@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131395348-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131395348-1');
+    </script>
+
+    
+
+    
+
+    
+
+
+<!-- Baidu Push -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- End Baidu Push -->
+
+
+    <meta charset="utf-8">
+    
+    <meta name="google-site-verification" content="bcJVGqEGcBIay29szBsswzqYxY3qUzWuvu1hfad3-08">
+    
+    
+    
+    
+    <title>「3-1」 后台管理系统 EasyUI 的使用 | 肯定会 | wistbean</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="教程,Java,Intellij IDEA,Java视频教程,项目实战,分布式,SSM,码农商城,EasyUI">
+    <meta name="description" content="SSM视频教程第3-1节：后台管理系统 EasyUI 的使用   SSM视频教程第 3-1 节课程概要EasyUI 的使用EasyUI for jQuery 的资源文件下载地址：Download EasyUI Package EasyUI 的官方文档：Documentation 本节使用到的组件Layout">
+<meta name="keywords" content="教程,Java,Intellij IDEA,Java视频教程,项目实战,分布式,SSM,码农商城,EasyUI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「3-1」 后台管理系统 EasyUI 的使用">
+<meta property="og:url" content="https://wistbean.github.io/java-ssm-3-1.html">
+<meta property="og:site_name" content="肯定会">
+<meta property="og:description" content="SSM视频教程第3-1节：后台管理系统 EasyUI 的使用   SSM视频教程第 3-1 节课程概要EasyUI 的使用EasyUI for jQuery 的资源文件下载地址：Download EasyUI Package EasyUI 的官方文档：Documentation 本节使用到的组件Layout">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://www.jeasyui.com/documentation/images/layout.png">
+<meta property="og:image" content="https://www.jeasyui.com/documentation/images/tree.png">
+<meta property="og:image" content="https://www.jeasyui.com/documentation/images/tabs.png">
+<meta property="og:image" content="https://www.jeasyui.com/documentation/images/datagrid.png">
+<meta property="og:updated_time" content="2019-02-23T17:53:54.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="「3-1」 后台管理系统 EasyUI 的使用">
+<meta name="twitter:description" content="SSM视频教程第3-1节：后台管理系统 EasyUI 的使用   SSM视频教程第 3-1 节课程概要EasyUI 的使用EasyUI for jQuery 的资源文件下载地址：Download EasyUI Package EasyUI 的官方文档：Documentation 本节使用到的组件Layout">
+<meta name="twitter:image" content="https://www.jeasyui.com/documentation/images/layout.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="肯定会" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu"  >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(https://wistbean.github.io/images/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://wistbean.github.io/img/avatar.jpg" alt="wistbean|肯定会">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">wistbean</h5>
+          <a href="mailto:wistbean.bb@gmail.com" title="wistbean.bb@gmail.com" class="mail">wistbean.bb@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/podcast/"  >
+                <i class="icon icon-lg icon-podcast"></i>
+                肯定会电台
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/Java/Java-SSM视频教程/"  >
+                <i class="icon icon-lg icon-coffee"></i>
+                Java SSM视频教程
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/vpn/"  >
+                <i class="icon icon-lg icon-google"></i>
+                云服务VPN
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories/python/"  >
+                <i class="icon icon-lg icon-bug"></i>
+                python3教程
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-bars"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives/"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/aboutMe/"  >
+                <i class="icon icon-lg icon-user"></i>
+                关于
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/support/"  >
+                <i class="icon icon-lg icon-thumbs-up"></i>
+                我要支持wistbean
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light off" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">「3-1」 后台管理系统 EasyUI 的使用</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搬瓦工搭建vpn">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">「3-1」 后台管理系统 EasyUI 的使用</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-09-18T16:40:25.000Z" itemprop="datePublished" class="page-time">
+  2018-09-19
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/">Java</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/Java-SSM视频教程/">Java SSM视频教程</a></li></ul></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>目录</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#SSM视频教程第3-1节：后台管理系统-EasyUI-的使用"><span class="post-toc-number">1.</span> <span class="post-toc-text">SSM视频教程第3-1节：后台管理系统 EasyUI 的使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#SSM视频教程第-3-1-节课程概要"><span class="post-toc-number">2.</span> <span class="post-toc-text">SSM视频教程第 3-1 节课程概要</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#EasyUI-的使用"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">EasyUI 的使用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#本节使用到的组件"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">本节使用到的组件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Layout"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">Layout</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tree"><span class="post-toc-number">2.2.2.</span> <span class="post-toc-text">Tree</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tabs"><span class="post-toc-number">2.2.3.</span> <span class="post-toc-text">Tabs</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DataGrid"><span class="post-toc-number">2.2.4.</span> <span class="post-toc-text">DataGrid</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#SSM视频教程目录"><span class="post-toc-number">3.</span> <span class="post-toc-text">SSM视频教程目录</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#相关文章"><span class="post-toc-number">4.</span> <span class="post-toc-text">相关文章</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-java-ssm-3-1"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">「3-1」 后台管理系统 EasyUI 的使用</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-09-19 00:40:25" datetime="2018-09-18T16:40:25.000Z"  itemprop="datePublished">2018-09-19</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/">Java</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Java/Java-SSM视频教程/">Java SSM视频教程</a></li></ul></li></ul>
+
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="SSM视频教程第3-1节：后台管理系统-EasyUI-的使用"><a href="#SSM视频教程第3-1节：后台管理系统-EasyUI-的使用" class="headerlink" title="SSM视频教程第3-1节：后台管理系统 EasyUI 的使用"></a>SSM视频教程第3-1节：后台管理系统 EasyUI 的使用</h1><iframe src="//player.bilibili.com/player.html?aid=32045814&cid=56055222&page=1" width="100%" height="436" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h1 id="SSM视频教程第-3-1-节课程概要"><a href="#SSM视频教程第-3-1-节课程概要" class="headerlink" title="SSM视频教程第 3-1 节课程概要"></a>SSM视频教程第 3-1 节课程概要</h1><h2 id="EasyUI-的使用"><a href="#EasyUI-的使用" class="headerlink" title="EasyUI 的使用"></a>EasyUI 的使用</h2><p>EasyUI for jQuery 的资源文件下载地址：<a href="https://www.jeasyui.com/download/downloads/jquery-easyui-1.6.3.zip" target="_blank" rel="noopener">Download EasyUI Package</a></p>
+<p>EasyUI 的官方文档：<a href="https://www.jeasyui.com/documentation/index.php" target="_blank" rel="noopener">Documentation</a></p>
+<h2 id="本节使用到的组件"><a href="#本节使用到的组件" class="headerlink" title="本节使用到的组件"></a>本节使用到的组件</h2><h3 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.jeasyui.com/documentation/images/layout.png" alt="EasyUI 布局" title="">
+                </div>
+                <div class="image-caption">EasyUI 布局</div>
+            </figure>
+<h3 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.jeasyui.com/documentation/images/tree.png" alt="EasyUI 菜单" title="">
+                </div>
+                <div class="image-caption">EasyUI 菜单</div>
+            </figure>
+<h3 id="Tabs"><a href="#Tabs" class="headerlink" title="Tabs"></a>Tabs</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.jeasyui.com/documentation/images/tabs.png" alt="EasyUI 导航标签" title="">
+                </div>
+                <div class="image-caption">EasyUI 导航标签</div>
+            </figure>
+<h3 id="DataGrid"><a href="#DataGrid" class="headerlink" title="DataGrid"></a>DataGrid</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://www.jeasyui.com/documentation/images/datagrid.png" alt="EasyUI 表格" title="">
+                </div>
+                <div class="image-caption">EasyUI 表格</div>
+            </figure>
+<h1 id="SSM视频教程目录"><a href="#SSM视频教程目录" class="headerlink" title="SSM视频教程目录"></a>SSM视频教程目录</h1><ul>
+<li><a href="https://wistbean.github.io/java-ssm-video.html#SSM%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B%E7%9B%AE%E5%BD%95">SSM视频教程目录</a></li>
+</ul>
+<h1 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h1><ul>
+<li><a href="http://www.runoob.com/jeasyui/jqueryeasyui-tutorial.html" target="_blank" rel="noopener">jQuery EasyUI 教程</a></li>
+<li><a href="http://m.jeasyui.net/tutorial/index.html" target="_blank" rel="noopener">EasyUI 中文网</a></li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+      <!--  
+<span class="post-time">
+    最后更新时间：<time datetime="2019-02-23T17:53:54.000Z" itemprop="dateUpdated">2019-02-24 01:53:54</time>
+</span><br>
+
+
+        
+        本站所有文章均为原创，转载请注明出处：url_for(page.permalink)
+        
+        -->
+        本站所有文章均为原创，转载请注明出处：
+        <a href="https://wistbean.github.io/java-ssm-3-1.html">
+                   wistbean|肯定会
+        </a>
+    </div>
+    
+    <footer>
+        <a href="https://wistbean.github.io">
+            <img src="https://wistbean.github.io/img/avatar.jpg" alt="wistbean|肯定会">
+            wistbean
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/EasyUI/">EasyUI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Intellij-IDEA/">Intellij IDEA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java视频教程/">Java视频教程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSM/">SSM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/教程/">教程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/码农商城/">码农商城</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/项目实战/">项目实战</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wistbean.github.io/java-ssm-3-1.html&title=《「3-1」 后台管理系统 EasyUI 的使用》 — 肯定会&pic=https://wistbean.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wistbean.github.io/java-ssm-3-1.html&title=《「3-1」 后台管理系统 EasyUI 的使用》 — 肯定会&source=wistbean，肯定会" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wistbean.github.io/java-ssm-3-1.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《「3-1」 后台管理系统 EasyUI 的使用》 — 肯定会&url=https://wistbean.github.io/java-ssm-3-1.html&via=https://wistbean.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wistbean.github.io/java-ssm-3-1.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/product-thinking.html" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">为了不跟产品经理干起来，我决定学点产品思维</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/github.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">GitHub是什么？如何使用？</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "EwGBpz5cFF0t3WS9QYluuUPU-gzGzoHsz",
+            appKey: "k9IK8hrOleIsPWLjCdv9atgo",
+            avatar: "wavatar",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>本站已加入 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-知识 4.0  (CC BY-NC-SA 4.0)国际协议 | 转载请注明链接出处</a></span>
+        </p>
+    </div>
+
+        <div class="bottom">
+                <p><span>wistbean &copy; 2015 - 2019</span>
+                    <span>
+                        
+                         <a href="https://wistbean.github.io/">肯定会|wistbean</a>、
+                          <a href="https://www.bwh8.net/aff.php?aff=32874" target="_blank">搬瓦工2019优惠码</a>、
+                          <a href="https://www.vultr.com/?ref=7656887" target="_blank">vultr2019优惠码</a>
+                    </span>
+                </p>
+        </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://wistbean.github.io/java-ssm-3-1.html&title=《「3-1」 后台管理系统 EasyUI 的使用》 — 肯定会&pic=https://wistbean.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://wistbean.github.io/java-ssm-3-1.html&title=《「3-1」 后台管理系统 EasyUI 的使用》 — 肯定会&source=wistbean，肯定会" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://wistbean.github.io/java-ssm-3-1.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《「3-1」 后台管理系统 EasyUI 的使用》 — 肯定会&url=https://wistbean.github.io/java-ssm-3-1.html&via=https://wistbean.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://wistbean.github.io/java-ssm-3-1.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLklEQVR42u3a0W6DMAwF0P3/T7PXSR3l2qaVSE6eJgokh0lW7PjnJx7Hyfj76+v9yZXX97zeedvAwMB4LON4O87uOVvc/EO8n/eUioGBsQHjbOLk1clTCSZ5w+l1DAwMjN6r4w3fDXNhYGBgFLdueZqabxMxMDAwegW1JIm9SD6/n4tjYGA8kJEXy77/90fONzAwMB7FOIpjsjVMSmy9gYGBsTYjD3C9LVoOTpLqi40pBgbGooz8gcnRZo9agGFgYGzAqDZSJL/edSUp+WFgYKzNmBTUkimr28Ek+N5cF8TAwHgUo9d+0SvV9QJufiCKgYGxG2N+Llotz00aOzAwMFZlVBfaC6N54E7m+mflGBgYizImZf1qQls+WQ1mx8DA2I2RP5YcalZbMSalPQwMjH0Yo5BXLYQF275mzwgGBsYGjGoYvWvRowCNgYGxNKMaQHsFtffbuzzER7NgYGAsx8iLYtV21Y8E0/f/AQwMjEUZvawwT0GTklk1kS70j2BgYCzE6AXETySxo1VhYGBsxpiX+5PtY/7+KDRjYGBsw0gCYi/1PYJRDdkXlTwMDIwlGEdx9I4kJ4W86PNhYGAszchHHiJ7banJ/c3aIQYGxhKMJMjmzRPzL9cM1hgYGBswegeZ1aX0WjEiJAYGBkZrI1htzkiKaxdFNwwMDIx4gl6pLmkLu0hiMTAwlmYkSWx1A5c8m2wcby63YWBgPJBRXVa1kaIHm7d6YGBgLMH4BaAnLLprCDjDAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
