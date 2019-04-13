@@ -59,7 +59,7 @@
 <meta property="og:description" content="绑定商品id在首页的商品列表中，我们可以将商品 id 绑定到 a 标签中： 12&amp;lt;d&amp;lt;a href=&quot;goods/$&amp;#123;product.id&amp;#125;&quot;&amp;gt;&amp;lt;img src=&quot;xxxx&quot;/&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt; 提供 rest 服务Service12345678910@Overridepublic ResponseJsonResult">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://wistbean.github.io/images/rest-product-detail.png">
-<meta property="og:updated_time" content="2019-04-08T11:55:34.964Z">
+<meta property="og:updated_time" content="2019-04-08T16:59:51.052Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「6-8」码农商城商品详情页的展示">
 <meta name="twitter:description" content="绑定商品id在首页的商品列表中，我们可以将商品 id 绑定到 a 标签中： 12&amp;lt;d&amp;lt;a href=&quot;goods/$&amp;#123;product.id&amp;#125;&quot;&amp;gt;&amp;lt;img src=&quot;xxxx&quot;/&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt; 提供 rest 服务Service12345678910@Overridepublic ResponseJsonResult">
@@ -211,7 +211,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>目录</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绑定商品id"><span class="post-toc-number">1.</span> <span class="post-toc-text">绑定商品id</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#提供-rest-服务"><span class="post-toc-number">2.</span> <span class="post-toc-text">提供 rest 服务</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Service"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Service</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Controller"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Controller</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#portal"><span class="post-toc-number">3.</span> <span class="post-toc-text">portal</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Service-1"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Service</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Controller-1"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">Controller</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#绑定商品id"><span class="post-toc-number">1.</span> <span class="post-toc-text">绑定商品id</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#提供-rest-服务"><span class="post-toc-number">2.</span> <span class="post-toc-text">提供 rest 服务</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Service"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Service</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Controller"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Controller</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#portal"><span class="post-toc-number">3.</span> <span class="post-toc-text">portal</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Service-1"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">Service</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Controller-1"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">Controller</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Template"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">Template</span></a></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -243,8 +243,8 @@
                 <div class="image-caption">rest服务</div>
             </figure>
 <h1 id="portal"><a href="#portal" class="headerlink" title="portal"></a>portal</h1><h2 id="Service-1"><a href="#Service-1" class="headerlink" title="Service"></a>Service</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Product <span class="title">getDetailById</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           String jsonResult = HttpClientUtil.httpGet(REST_URL + REST_PRODUCT_DETAIL + id);</span><br><span class="line">           ResponseJsonResult responseJsonResult = GsonUtils.fromJson(ResponseJsonResult.class, jsonResult);</span><br><span class="line">           Product product = (Product) responseJsonResult.getObj();</span><br><span class="line">           <span class="keyword">return</span> product;</span><br><span class="line">       &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Controller-1"><a href="#Controller-1" class="headerlink" title="Controller"></a>Controller</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<h2 id="Controller-1"><a href="#Controller-1" class="headerlink" title="Controller"></a>Controller</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProductController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    ProductService productService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"goods/&#123;productId&#125;"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">index</span><span class="params">(ModelMap modelMap,@PathVariable(<span class="string">"productId"</span>)</span> Integer productId)</span>&#123;</span><br><span class="line">        Product product = productService.getDetailById(productId);</span><br><span class="line">        modelMap.addAttribute(<span class="string">"product"</span>,product);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"detail"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Template"><a href="#Template" class="headerlink" title="Template"></a>Template</h2>
         </div>
 
         <blockquote class="post-copyright">
@@ -252,7 +252,7 @@
     <div class="content">
       <!--  
 <span class="post-time">
-    最后更新时间：<time datetime="2019-04-08T11:55:34.964Z" itemprop="dateUpdated">2019-04-08 19:55:34</time>
+    最后更新时间：<time datetime="2019-04-08T16:59:51.052Z" itemprop="dateUpdated">2019-04-09 00:59:51</time>
 </span><br>
 
 
@@ -335,9 +335,9 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/cloud-server.html" id="post-prev" class="post-nav-link">
+      <a href="/996.html" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">推荐|我用了十几台云服务器VPS后，告诉你哪家云服务产商性价比高,性能稳定</h4>
+        <h4 class="title">谈谈 996</h4>
       </a>
     </div>
   
