@@ -4,6 +4,70 @@
 
     
   <url>
+    <loc>https://wistbean.github.io/java-ssm-6-7.html</loc>
+    <lastmod>2019-04-23T09:43:53.067Z</lastmod>
+    <data>
+        <display>
+        <title>「6-7」码农商城前端页面优化</title>
+        <pubTime>2019-04-07T08:24:06.000Z</pubTime>
+        
+        <tag>码农商城</tag>
+         
+        <tag>httpclient</tag>
+         
+        <tag>freemarker</tag>
+         
+        <tag>商城首页</tag>
+         
+        <tag>电商商品数据</tag>
+         
+        <tag>商品数据</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wistbean.github.io/categories/Java/"/>
+          
+             
+              <breadCrumb title="Java SSM视频教程" url="https://wistbean.github.io/categories/Java/Java-SSM%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wistbean.github.io/java-ssm-6-8.html</loc>
+    <lastmod>2019-04-23T09:43:50.439Z</lastmod>
+    <data>
+        <display>
+        <title>「6-8」码农商城商品详情页的展示</title>
+        <pubTime>2019-04-08T11:11:23.000Z</pubTime>
+        
+        <tag>码农商城</tag>
+         
+        <tag>商城首页</tag>
+         
+        <tag>电商商品数据</tag>
+         
+        <tag>商品数据</tag>
+         
+        <tag>品详情页</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="https://wistbean.github.io/categories/Java/"/>
+          
+             
+              <breadCrumb title="Java SSM视频教程" url="https://wistbean.github.io/categories/Java/Java-SSM%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wistbean.github.io/bu-neng-zai-sb.html</loc>
     <lastmod>2019-04-23T09:42:41.768Z</lastmod>
     <data>
@@ -310,21 +374,6 @@
 
     
   <url>
-    <loc>https://wistbean.github.io/java-ssm-6-8.html</loc>
-    <lastmod>2019-04-08T16:59:51.052Z</lastmod>
-    <data>
-        <display>
-        <title>「6-8」码农商城商品详情页的展示</title>
-        <pubTime>2019-04-08T11:11:23.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://wistbean.github.io/java-String.html</loc>
     <lastmod>2019-04-08T15:45:24.340Z</lastmod>
     <data>
@@ -339,21 +388,6 @@
              
               <breadCrumb title="Java" url="https://wistbean.github.io/categories/Java/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wistbean.github.io/java-ssm-6-7.html</loc>
-    <lastmod>2019-04-07T09:44:49.880Z</lastmod>
-    <data>
-        <display>
-        <title>「6-7」码农商城前端页面优化</title>
-        <pubTime>2019-04-07T08:24:06.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
